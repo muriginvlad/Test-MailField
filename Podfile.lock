@@ -1,0 +1,16 @@
+PODS:
+  - AutoCompleteTextField (0.5.0)
+
+DEPENDENCIES:
+  - AutoCompleteTextField
+
+SPEC REPOS:
+  trunk:
+    - AutoCompleteTextField
+
+SPEC CHECKSUMS:
+  AutoCompleteTextField: 997d9c8ca5e8c8a092ac8e72ebbf3a127ebf3b14
+
+PODFILE CHECKSUM: 7ee2a7006083d36c2ccfe88f1b27409d93212777
+
+COCOAPODS: 1.11.2

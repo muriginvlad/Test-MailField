@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MailField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSv-ae-u3K" customClass="AutoCompleteTextField" customModule="AutoCompleteTextField">
+                                <rect key="frame" x="10" y="195" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5M-cf-hkA">
+                                <rect key="frame" x="10" y="144" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yl-0X-KD2">
+                                <rect key="frame" x="172" y="259" width="70" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="uwZ-E3-R2C"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E5M-cf-hkA" secondAttribute="trailing" constant="10" id="5ZL-q9-IGQ"/>
+                            <constraint firstItem="cSv-ae-u3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D57-38-TCS"/>
+                            <constraint firstItem="cSv-ae-u3K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="EOk-eE-1JF"/>
+                            <constraint firstItem="6yl-0X-KD2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FCO-HF-gEA"/>
+                            <constraint firstItem="E5M-cf-hkA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="JE2-U5-eBM"/>
+                            <constraint firstItem="cSv-ae-u3K" firstAttribute="top" secondItem="E5M-cf-hkA" secondAttribute="bottom" constant="30" id="Kk0-Ol-zzi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSv-ae-u3K" secondAttribute="trailing" constant="10" id="OpT-z5-1yV"/>
+                            <constraint firstItem="E5M-cf-hkA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VOh-K1-8zy"/>
+                            <constraint firstItem="6yl-0X-KD2" firstAttribute="top" secondItem="cSv-ae-u3K" secondAttribute="bottom" constant="30" id="nW4-nR-o9n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterButton" destination="6yl-0X-KD2" id="arR-Qz-nzN"/>
+                        <outlet property="mailTextFiled" destination="cSv-ae-u3K" id="zHI-m4-qa9"/>
+                        <outlet property="mainTitle" destination="E5M-cf-hkA" id="gDz-ox-kY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
